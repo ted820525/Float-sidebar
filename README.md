@@ -37,5 +37,18 @@ Created with CodeSandbox
       this.page = page;
 
     }
+# 用transition調整sidebar時間差產生sidebar收回去時間漸層效果
+@mixin ul-childs($values...){
+  @each $var in $values{
+    &:nth-child(#{$var}){
+      transition:transform linear calc(.1s * #{$var}), display .7s;
+    }
+  }
+
+}
+.fade-enter-active, .fade-leave-active{
+  @include ul-childs(1,2,3,4,5,6,7);
+
+}
 
 
