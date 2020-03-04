@@ -2,7 +2,7 @@
 Created with CodeSandbox
 
 # 用v-show來做開關的關閉
-#@click="togglePage來做名子的切換
+
 
 
  <i @click="show = !show " class="fas fa-bars"></i>
@@ -27,7 +27,10 @@ Created with CodeSandbox
 
     }
 
+
   },
+  
+ #click="togglePage來做名子的切換
   methods:{
     togglePage(page){
       this.show =! this.show;
