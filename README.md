@@ -30,7 +30,7 @@ Created with CodeSandbox
 
   },
   
- #click="togglePage來做名子的切換
+# click="togglePage來做名子的切換
   methods:{
     togglePage(page){
       this.show =! this.show;
